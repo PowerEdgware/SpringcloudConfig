@@ -1,0 +1,47 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/test
+    username: root
+    password: admin
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+      connection-timeout: 60000
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+  redis:
+    host: 192.168.56.102
+    port: 6379
+    pool:
+      max-active: 100
+      max-idle: 3
+      max-wait: 30
+      min-idle: 1
+  jpa:
+    database: mysql
+    show-sql: true
+    #generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: com.example.util.ImprovedNamingStrategy
+  mvc:
+    servlet:
+      load-on-startup: 1
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh,health,info #must add quotes if you want to include (or exclude) all endpoints, "*" represents all
+  endpoint:
+    health:
+      show-details: always #default never
+   
