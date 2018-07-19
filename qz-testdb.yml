@@ -8,7 +8,7 @@ spring:
     hikari:
       idle-timeout: 600000
       max-lifetime: 1800000
-      maximum-pool-size: 10
+      maximum-pool-size: 5
       connection-timeout: 60000
       data-source-properties:
         cachePrepStmts: true
