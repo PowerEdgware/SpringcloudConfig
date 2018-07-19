@@ -29,7 +29,7 @@ spring:
     hibernate:
       ddl-auto: update
       naming:
-        physical-strategy: net.unitedcloud.chang.util.ImprovedNamingStrategy
+        physical-strategy: net.unitedcloud.chang.util.hibernate.ImprovedNamingStrategy
   mvc:
     servlet:
       load-on-startup: 1
