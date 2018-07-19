@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost/test
+    url: jdbc:mysql://localhost/dataflowdb
     username: root
     password: admin
     type: com.zaxxer.hikari.HikariDataSource
