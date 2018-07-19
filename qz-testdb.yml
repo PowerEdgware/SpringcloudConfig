@@ -4,6 +4,7 @@ spring:
     username: root
     password: admin
     type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
     hikari:
       idle-timeout: 600000
       max-lifetime: 1800000
