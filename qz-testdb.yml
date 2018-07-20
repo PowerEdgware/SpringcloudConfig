@@ -41,8 +41,6 @@ spring:
     view:
       prefix: /WEB-INF/view/
       suffix: .jsp
-    static-path-pattern: /WEB-INF/**
-    
 management:
   endpoints:
     web:
