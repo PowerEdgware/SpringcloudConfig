@@ -46,7 +46,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: bus-refresh,health,info #must add quotes if you want to include (or exclude) all endpoints, "*" represents all
+        include: bus-refresh,health,info,configprops #must add quotes if you want to include (or exclude) all endpoints, "*" represents all
   endpoint:
     health:
       show-details: always #default never
